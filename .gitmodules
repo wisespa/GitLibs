@@ -19,3 +19,18 @@
 [submodule "nimbus"]
 	path = nimbus
 	url = https://github.com/jverkoey/nimbus.git
+[submodule "MKStoreKit"]
+	path = MKStoreKit
+	url = https://github.com/MugunthKumar/MKStoreKit.git
+[submodule "MBProgressHUD"]
+	path = MBProgressHUD
+	url = https://github.com/jdg/MBProgressHUD.git
+[submodule "KTPhotoBrowser"]
+	path = KTPhotoBrowser
+	url = https://github.com/kirbyt/KTPhotoBrowser.git
+[submodule "json-framework"]
+	path = json-framework
+	url = https://github.com/stig/json-framework.git
+[submodule "GusUtils"]
+	path = GusUtils
+	url = https://github.com/gpambrozio/GusUtils.git

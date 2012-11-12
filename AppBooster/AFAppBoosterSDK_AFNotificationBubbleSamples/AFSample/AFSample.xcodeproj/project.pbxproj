@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C746505E15A3212900561DAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746505D15A3212900561DAB /* UIKit.framework */; };
+		C746506015A3212900561DAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746505F15A3212900561DAB /* Foundation.framework */; };
+		C746506215A3212900561DAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746506115A3212900561DAB /* CoreGraphics.framework */; };
+		C746506815A3212900561DAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C746506615A3212900561DAB /* InfoPlist.strings */; };
+		C746506A15A3212900561DAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C746506915A3212900561DAB /* main.m */; };
+		C746506E15A3212900561DAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C746506D15A3212900561DAB /* AppDelegate.m */; };
+		C746508D15A322D100561DAB /* AFBubbleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C746507E15A322D100561DAB /* AFBubbleButton.m */; };
+		C746508E15A322D100561DAB /* AFNotificationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C746508015A322D100561DAB /* AFNotificationItem.m */; };
+		C746508F15A322D100561DAB /* bubble_left.png in Resources */ = {isa = PBXBuildFile; fileRef = C746508215A322D100561DAB /* bubble_left.png */; };
+		C746509015A322D100561DAB /* bubble_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C746508315A322D100561DAB /* bubble_left@2x.png */; };
+		C746509115A322D100561DAB /* bubble_left_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = C746508415A322D100561DAB /* bubble_left_disabled.png */; };
+		C746509215A322D100561DAB /* bubble_left_disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C746508515A322D100561DAB /* bubble_left_disabled@2x.png */; };
+		C746509315A322D100561DAB /* bubble_left_red.png in Resources */ = {isa = PBXBuildFile; fileRef = C746508615A322D100561DAB /* bubble_left_red.png */; };
+		C746509415A322D100561DAB /* bubble_left_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C746508715A322D100561DAB /* bubble_left_red@2x.png */; };
+		C746509515A322D100561DAB /* bubble_right.png in Resources */ = {isa = PBXBuildFile; fileRef = C746508815A322D100561DAB /* bubble_right.png */; };
+		C746509615A322D100561DAB /* bubble_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C746508915A322D100561DAB /* bubble_right@2x.png */; };
+		C746509715A322D100561DAB /* bubble_right_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = C746508A15A322D100561DAB /* bubble_right_disabled.png */; };
+		C746509815A322D100561DAB /* bubble_right_disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C746508B15A322D100561DAB /* bubble_right_disabled@2x.png */; };
+		C74650A215A3232900561DAB /* AFABNotificationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C746509D15A3232900561DAB /* AFABNotificationBar.m */; };
+		C74650A315A3232900561DAB /* AFNotificationBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = C74650A015A3232900561DAB /* AFNotificationBadge.m */; };
+		C74650A615A3239200561DAB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74650A515A3239200561DAB /* QuartzCore.framework */; };
+		C74650A815A3239B00561DAB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74650A715A3239B00561DAB /* SystemConfiguration.framework */; };
+		C74650AA15A323A200561DAB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74650A915A323A200561DAB /* CFNetwork.framework */; };
+		C7DB325C15A491D6000249F7 /* myapplogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C7DB325A15A491D6000249F7 /* myapplogo.png */; };
+		C7DB325D15A491D6000249F7 /* myapplogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7DB325B15A491D6000249F7 /* myapplogo@2x.png */; };
+		EEBB723B162EA7810040927F /* libAppsfireSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBB723A162EA7810040927F /* libAppsfireSDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C746505915A3212900561DAB /* AFSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C746505D15A3212900561DAB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C746505F15A3212900561DAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C746506115A3212900561DAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C746506515A3212900561DAB /* AFSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFSample-Info.plist"; sourceTree = "<group>"; };
+		C746506715A3212900561DAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C746506915A3212900561DAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C746506B15A3212900561DAB /* AFSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFSample-Prefix.pch"; sourceTree = "<group>"; };
+		C746506C15A3212900561DAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C746506D15A3212900561DAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C746507D15A322D100561DAB /* AFBubbleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFBubbleButton.h; sourceTree = "<group>"; };
+		C746507E15A322D100561DAB /* AFBubbleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBubbleButton.m; sourceTree = "<group>"; };
+		C746507F15A322D100561DAB /* AFNotificationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNotificationItem.h; sourceTree = "<group>"; };
+		C746508015A322D100561DAB /* AFNotificationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNotificationItem.m; sourceTree = "<group>"; };
+		C746508215A322D100561DAB /* bubble_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble_left.png; sourceTree = "<group>"; };
+		C746508315A322D100561DAB /* bubble_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble_left@2x.png"; sourceTree = "<group>"; };
+		C746508415A322D100561DAB /* bubble_left_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble_left_disabled.png; sourceTree = "<group>"; };
+		C746508515A322D100561DAB /* bubble_left_disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble_left_disabled@2x.png"; sourceTree = "<group>"; };
+		C746508615A322D100561DAB /* bubble_left_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble_left_red.png; sourceTree = "<group>"; };
+		C746508715A322D100561DAB /* bubble_left_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble_left_red@2x.png"; sourceTree = "<group>"; };
+		C746508815A322D100561DAB /* bubble_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble_right.png; sourceTree = "<group>"; };
+		C746508915A322D100561DAB /* bubble_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble_right@2x.png"; sourceTree = "<group>"; };
+		C746508A15A322D100561DAB /* bubble_right_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble_right_disabled.png; sourceTree = "<group>"; };
+		C746508B15A322D100561DAB /* bubble_right_disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble_right_disabled@2x.png"; sourceTree = "<group>"; };
+		C746509C15A3232900561DAB /* AFABNotificationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFABNotificationBar.h; sourceTree = "<group>"; };
+		C746509D15A3232900561DAB /* AFABNotificationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFABNotificationBar.m; sourceTree = "<group>"; };
+		C746509E15A3232900561DAB /* AFAppBoosterSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppBoosterSDK.h; sourceTree = "<group>"; };
+		C746509F15A3232900561DAB /* AFNotificationBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNotificationBadge.h; sourceTree = "<group>"; };
+		C74650A015A3232900561DAB /* AFNotificationBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNotificationBadge.m; sourceTree = "<group>"; };
+		C74650A515A3239200561DAB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C74650A715A3239B00561DAB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C74650A915A323A200561DAB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C7DB325A15A491D6000249F7 /* myapplogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myapplogo.png; sourceTree = "<group>"; };
+		C7DB325B15A491D6000249F7 /* myapplogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myapplogo@2x.png"; sourceTree = "<group>"; };
+		EEBB723A162EA7810040927F /* libAppsfireSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAppsfireSDK.a; path = "../../../../AFAppBoosterSDK/AFAppBoosterSDK-files/libAppsfireSDK.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C746505615A3212900561DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C74650AA15A323A200561DAB /* CFNetwork.framework in Frameworks */,
+				C74650A815A3239B00561DAB /* SystemConfiguration.framework in Frameworks */,
+				C74650A615A3239200561DAB /* QuartzCore.framework in Frameworks */,
+				C746505E15A3212900561DAB /* UIKit.framework in Frameworks */,
+				C746506015A3212900561DAB /* Foundation.framework in Frameworks */,
+				C746506215A3212900561DAB /* CoreGraphics.framework in Frameworks */,
+				EEBB723B162EA7810040927F /* libAppsfireSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C746504E15A3212900561DAB = {
+			isa = PBXGroup;
+			children = (
+				C746506315A3212900561DAB /* AFSample */,
+				C746505C15A3212900561DAB /* Frameworks */,
+				C746505A15A3212900561DAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C746505A15A3212900561DAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C746505915A3212900561DAB /* AFSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C746505C15A3212900561DAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C74650A915A323A200561DAB /* CFNetwork.framework */,
+				C74650A715A3239B00561DAB /* SystemConfiguration.framework */,
+				C74650A515A3239200561DAB /* QuartzCore.framework */,
+				C746505D15A3212900561DAB /* UIKit.framework */,
+				C746505F15A3212900561DAB /* Foundation.framework */,
+				C746506115A3212900561DAB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C746506315A3212900561DAB /* AFSample */ = {
+			isa = PBXGroup;
+			children = (
+				C746509B15A3232900561DAB /* AFAppBoosterSDK-files */,
+				C746507C15A322D100561DAB /* AFNotificationBubble */,
+				C746506C15A3212900561DAB /* AppDelegate.h */,
+				C746506D15A3212900561DAB /* AppDelegate.m */,
+				C746506415A3212900561DAB /* Supporting Files */,
+			);
+			path = AFSample;
+			sourceTree = "<group>";
+		};
+		C746506415A3212900561DAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C746506515A3212900561DAB /* AFSample-Info.plist */,
+				C746506615A3212900561DAB /* InfoPlist.strings */,
+				C746506915A3212900561DAB /* main.m */,
+				C746506B15A3212900561DAB /* AFSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C746507C15A322D100561DAB /* AFNotificationBubble */ = {
+			isa = PBXGroup;
+			children = (
+				C746507D15A322D100561DAB /* AFBubbleButton.h */,
+				C746507E15A322D100561DAB /* AFBubbleButton.m */,
+				C746507F15A322D100561DAB /* AFNotificationItem.h */,
+				C746508015A322D100561DAB /* AFNotificationItem.m */,
+				C746508115A322D100561DAB /* Resources */,
+			);
+			path = AFNotificationBubble;
+			sourceTree = "<group>";
+		};
+		C746508115A322D100561DAB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7DB325A15A491D6000249F7 /* myapplogo.png */,
+				C7DB325B15A491D6000249F7 /* myapplogo@2x.png */,
+				C746508215A322D100561DAB /* bubble_left.png */,
+				C746508315A322D100561DAB /* bubble_left@2x.png */,
+				C746508415A322D100561DAB /* bubble_left_disabled.png */,
+				C746508515A322D100561DAB /* bubble_left_disabled@2x.png */,
+				C746508615A322D100561DAB /* bubble_left_red.png */,
+				C746508715A322D100561DAB /* bubble_left_red@2x.png */,
+				C746508815A322D100561DAB /* bubble_right.png */,
+				C746508915A322D100561DAB /* bubble_right@2x.png */,
+				C746508A15A322D100561DAB /* bubble_right_disabled.png */,
+				C746508B15A322D100561DAB /* bubble_right_disabled@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C746509B15A3232900561DAB /* AFAppBoosterSDK-files */ = {
+			isa = PBXGroup;
+			children = (
+				C746509C15A3232900561DAB /* AFABNotificationBar.h */,
+				C746509D15A3232900561DAB /* AFABNotificationBar.m */,
+				C746509E15A3232900561DAB /* AFAppBoosterSDK.h */,
+				C746509F15A3232900561DAB /* AFNotificationBadge.h */,
+				C74650A015A3232900561DAB /* AFNotificationBadge.m */,
+				EEBB723A162EA7810040927F /* libAppsfireSDK.a */,
+			);
+			path = "AFAppBoosterSDK-files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C746505815A3212900561DAB /* AFSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C746507115A3212900561DAB /* Build configuration list for PBXNativeTarget "AFSample" */;
+			buildPhases = (
+				C746505515A3212900561DAB /* Sources */,
+				C746505615A3212900561DAB /* Frameworks */,
+				C746505715A3212900561DAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFSample;
+			productName = AFSample;
+			productReference = C746505915A3212900561DAB /* AFSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C746505015A3212900561DAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Appsfire;
+			};
+			buildConfigurationList = C746505315A3212900561DAB /* Build configuration list for PBXProject "AFSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C746504E15A3212900561DAB;
+			productRefGroup = C746505A15A3212900561DAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C746505815A3212900561DAB /* AFSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C746505715A3212900561DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C746506815A3212900561DAB /* InfoPlist.strings in Resources */,
+				C746508F15A322D100561DAB /* bubble_left.png in Resources */,
+				C746509015A322D100561DAB /* bubble_left@2x.png in Resources */,
+				C746509115A322D100561DAB /* bubble_left_disabled.png in Resources */,
+				C746509215A322D100561DAB /* bubble_left_disabled@2x.png in Resources */,
+				C746509315A322D100561DAB /* bubble_left_red.png in Resources */,
+				C746509415A322D100561DAB /* bubble_left_red@2x.png in Resources */,
+				C746509515A322D100561DAB /* bubble_right.png in Resources */,
+				C746509615A322D100561DAB /* bubble_right@2x.png in Resources */,
+				C746509715A322D100561DAB /* bubble_right_disabled.png in Resources */,
+				C746509815A322D100561DAB /* bubble_right_disabled@2x.png in Resources */,
+				C7DB325C15A491D6000249F7 /* myapplogo.png in Resources */,
+				C7DB325D15A491D6000249F7 /* myapplogo@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C746505515A3212900561DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C746506A15A3212900561DAB /* main.m in Sources */,
+				C746506E15A3212900561DAB /* AppDelegate.m in Sources */,
+				C746508D15A322D100561DAB /* AFBubbleButton.m in Sources */,
+				C746508E15A322D100561DAB /* AFNotificationItem.m in Sources */,
+				C74650A215A3232900561DAB /* AFABNotificationBar.m in Sources */,
+				C74650A315A3232900561DAB /* AFNotificationBadge.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C746506615A3212900561DAB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C746506715A3212900561DAB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C746506F15A3212900561DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C746507015A3212900561DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C746507215A3212900561DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFSample/AFSample-Prefix.pch";
+				INFOPLIST_FILE = "AFSample/AFSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AFSample/AFAppBoosterSDK-files\"",
+					"\"$(SRCROOT)/../../AFAppBoosterSDK/AFAppBoosterSDK-files\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C746507315A3212900561DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFSample/AFSample-Prefix.pch";
+				INFOPLIST_FILE = "AFSample/AFSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AFSample/AFAppBoosterSDK-files\"",
+					"\"$(SRCROOT)/../../AFAppBoosterSDK/AFAppBoosterSDK-files\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C746505315A3212900561DAB /* Build configuration list for PBXProject "AFSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C746506F15A3212900561DAB /* Debug */,
+				C746507015A3212900561DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C746507115A3212900561DAB /* Build configuration list for PBXNativeTarget "AFSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C746507215A3212900561DAB /* Debug */,
+				C746507315A3212900561DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C746505015A3212900561DAB /* Project object */;
+}

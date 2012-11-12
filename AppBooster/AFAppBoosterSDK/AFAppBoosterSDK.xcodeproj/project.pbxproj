@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011CB40814449D8D00FA5BEC /* AFABNotificationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 011CB40314449D8D00FA5BEC /* AFABNotificationBar.m */; };
+		011CB40914449D8D00FA5BEC /* AFNotificationBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 011CB40614449D8D00FA5BEC /* AFNotificationBadge.m */; };
+		011CB41714449DE200FA5BEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 011CB40C14449DE200FA5BEC /* InfoPlist.strings */; };
+		011CB41814449DE200FA5BEC /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 011CB40E14449DE200FA5BEC /* Entitlements.plist */; };
+		011CB41914449DE200FA5BEC /* feedback.png in Resources */ = {isa = PBXBuildFile; fileRef = 011CB40F14449DE200FA5BEC /* feedback.png */; };
+		011CB41A14449DE200FA5BEC /* firstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 011CB41114449DE200FA5BEC /* firstView.m */; };
+		011CB41B14449DE200FA5BEC /* firstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 011CB41214449DE200FA5BEC /* firstView.xib */; };
+		011CB41C14449DE200FA5BEC /* icon_star.png in Resources */ = {isa = PBXBuildFile; fileRef = 011CB41314449DE200FA5BEC /* icon_star.png */; };
+		011CB41D14449DE200FA5BEC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 011CB41414449DE200FA5BEC /* icon.png */; };
+		011CB41E14449DE200FA5BEC /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 011CB41514449DE200FA5BEC /* icon@2x.png */; };
+		011CB41F14449DE200FA5BEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 011CB41614449DE200FA5BEC /* main.m */; };
+		011CB42514449DEF00FA5BEC /* AFAppBoosterSDKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 011CB42114449DEF00FA5BEC /* AFAppBoosterSDKAppDelegate.m */; };
+		011CB42614449DEF00FA5BEC /* appStoreIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 011CB42214449DEF00FA5BEC /* appStoreIcon.png */; };
+		011CB42714449DEF00FA5BEC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 011CB42314449DEF00FA5BEC /* Default.png */; };
+		011CB42814449DEF00FA5BEC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 011CB42414449DEF00FA5BEC /* Default@2x.png */; };
+		01364F7E139E368200EFFF0A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01364F7D139E368200EFFF0A /* SystemConfiguration.framework */; };
+		017439991398E24A0036326A /* singleViewControllerWithBottomToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 017439981398E24A0036326A /* singleViewControllerWithBottomToolBar.m */; };
+		01830E201396777F005112CC /* tabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01830E1E1396777E005112CC /* tabbarController.m */; };
+		01830E2313967862005112CC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01830E2213967862005112CC /* MainWindow.xib */; };
+		01B1D06B1394F3460031022B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B1D06A1394F3460031022B /* UIKit.framework */; };
+		01B1D06D1394F3470031022B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B1D06C1394F3470031022B /* Foundation.framework */; };
+		01B1D06F1394F3470031022B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B1D06E1394F3470031022B /* CoreGraphics.framework */; };
+		01B1D09F1394F3CC0031022B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B1D09E1394F3CC0031022B /* QuartzCore.framework */; };
+		01B1D0A11394F3E00031022B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B1D0A01394F3E00031022B /* CFNetwork.framework */; };
+		01CEE7E8143DB2FA000FF737 /* singleViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CEE7E6143DB2FA000FF737 /* singleViewController_iPad.m */; };
+		01CEE7E9143DB2FA000FF737 /* singleViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CEE7E7143DB2FA000FF737 /* singleViewController_iPad.xib */; };
+		01CEE7F5143DBA03000FF737 /* singleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CEE7F3143DBA03000FF737 /* singleViewController.m */; };
+		01CEE7F6143DBA03000FF737 /* singleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CEE7F4143DBA03000FF737 /* singleViewController.xib */; };
+		01FE9E5116308489004CAD5D /* libAppboosterSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01FE9E5016308489004CAD5D /* libAppboosterSDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		011CB40214449D8D00FA5BEC /* AFABNotificationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFABNotificationBar.h; sourceTree = "<group>"; };
+		011CB40314449D8D00FA5BEC /* AFABNotificationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFABNotificationBar.m; sourceTree = "<group>"; };
+		011CB40514449D8D00FA5BEC /* AFNotificationBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNotificationBadge.h; sourceTree = "<group>"; };
+		011CB40614449D8D00FA5BEC /* AFNotificationBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNotificationBadge.m; sourceTree = "<group>"; };
+		011CB40D14449DE200FA5BEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		011CB40E14449DE200FA5BEC /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = SOURCE_ROOT; };
+		011CB40F14449DE200FA5BEC /* feedback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feedback.png; sourceTree = SOURCE_ROOT; };
+		011CB41014449DE200FA5BEC /* firstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = firstView.h; sourceTree = SOURCE_ROOT; };
+		011CB41114449DE200FA5BEC /* firstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = firstView.m; sourceTree = SOURCE_ROOT; };
+		011CB41214449DE200FA5BEC /* firstView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = firstView.xib; sourceTree = SOURCE_ROOT; };
+		011CB41314449DE200FA5BEC /* icon_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_star.png; sourceTree = SOURCE_ROOT; };
+		011CB41414449DE200FA5BEC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
+		011CB41514449DE200FA5BEC /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = SOURCE_ROOT; };
+		011CB41614449DE200FA5BEC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		011CB42014449DEF00FA5BEC /* AFAppBoosterSDKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppBoosterSDKAppDelegate.h; sourceTree = "<group>"; };
+		011CB42114449DEF00FA5BEC /* AFAppBoosterSDKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppBoosterSDKAppDelegate.m; sourceTree = "<group>"; };
+		011CB42214449DEF00FA5BEC /* appStoreIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appStoreIcon.png; sourceTree = "<group>"; };
+		011CB42314449DEF00FA5BEC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		011CB42414449DEF00FA5BEC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		011CB42914449DF900FA5BEC /* AFAppBoosterSDK-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AFAppBoosterSDK-Info.plist"; sourceTree = "<group>"; };
+		011CB42A14449DF900FA5BEC /* AFAppBoosterSDK-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFAppBoosterSDK-Prefix.pch"; sourceTree = "<group>"; };
+		01364F7D139E368200EFFF0A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		017439971398E24A0036326A /* singleViewControllerWithBottomToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singleViewControllerWithBottomToolBar.h; sourceTree = "<group>"; };
+		017439981398E24A0036326A /* singleViewControllerWithBottomToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = singleViewControllerWithBottomToolBar.m; sourceTree = "<group>"; };
+		01830E1D1396777E005112CC /* tabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabbarController.h; sourceTree = "<group>"; };
+		01830E1E1396777E005112CC /* tabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabbarController.m; sourceTree = "<group>"; };
+		01830E2213967862005112CC /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		01B1D0661394F3460031022B /* AFAppBoosterSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFAppBoosterSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B1D06A1394F3460031022B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		01B1D06C1394F3470031022B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		01B1D06E1394F3470031022B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		01B1D09E1394F3CC0031022B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		01B1D0A01394F3E00031022B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		01B7D2B9152066A7001EFB4B /* AFAppBoosterSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAppBoosterSDK.h; sourceTree = "<group>"; };
+		01CEE7E5143DB2FA000FF737 /* singleViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singleViewController_iPad.h; sourceTree = "<group>"; };
+		01CEE7E6143DB2FA000FF737 /* singleViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = singleViewController_iPad.m; sourceTree = "<group>"; };
+		01CEE7E7143DB2FA000FF737 /* singleViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = singleViewController_iPad.xib; sourceTree = "<group>"; };
+		01CEE7F2143DBA02000FF737 /* singleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singleViewController.h; sourceTree = "<group>"; };
+		01CEE7F3143DBA03000FF737 /* singleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = singleViewController.m; sourceTree = "<group>"; };
+		01CEE7F4143DBA03000FF737 /* singleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = singleViewController.xib; sourceTree = "<group>"; };
+		01FE9E5016308489004CAD5D /* libAppboosterSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppboosterSDK.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01B1D0631394F3460031022B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01364F7E139E368200EFFF0A /* SystemConfiguration.framework in Frameworks */,
+				01B1D0A11394F3E00031022B /* CFNetwork.framework in Frameworks */,
+				01B1D09F1394F3CC0031022B /* QuartzCore.framework in Frameworks */,
+				01B1D06B1394F3460031022B /* UIKit.framework in Frameworks */,
+				01B1D06D1394F3470031022B /* Foundation.framework in Frameworks */,
+				01B1D06F1394F3470031022B /* CoreGraphics.framework in Frameworks */,
+				01FE9E5116308489004CAD5D /* libAppboosterSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		011CB40114449D8D00FA5BEC /* AFAppBoosterSDK-files */ = {
+			isa = PBXGroup;
+			children = (
+				01FE9E5016308489004CAD5D /* libAppboosterSDK.a */,
+				01B7D2B9152066A7001EFB4B /* AFAppBoosterSDK.h */,
+				011CB40214449D8D00FA5BEC /* AFABNotificationBar.h */,
+				011CB40314449D8D00FA5BEC /* AFABNotificationBar.m */,
+				011CB40514449D8D00FA5BEC /* AFNotificationBadge.h */,
+				011CB40614449D8D00FA5BEC /* AFNotificationBadge.m */,
+			);
+			path = "AFAppBoosterSDK-files";
+			sourceTree = "<group>";
+		};
+		011CB40B14449DE200FA5BEC /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				011CB40C14449DE200FA5BEC /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		01830E0A139541BB005112CC /* Sample app */ = {
+			isa = PBXGroup;
+			children = (
+				011CB42914449DF900FA5BEC /* AFAppBoosterSDK-Info.plist */,
+				011CB42A14449DF900FA5BEC /* AFAppBoosterSDK-Prefix.pch */,
+				011CB42014449DEF00FA5BEC /* AFAppBoosterSDKAppDelegate.h */,
+				011CB42114449DEF00FA5BEC /* AFAppBoosterSDKAppDelegate.m */,
+				011CB42214449DEF00FA5BEC /* appStoreIcon.png */,
+				011CB42314449DEF00FA5BEC /* Default.png */,
+				011CB42414449DEF00FA5BEC /* Default@2x.png */,
+				01B1D0711394F3470031022B /* Supporting Files */,
+				01830E2213967862005112CC /* MainWindow.xib */,
+				01830E1D1396777E005112CC /* tabbarController.h */,
+				01830E1E1396777E005112CC /* tabbarController.m */,
+				01CEE7F2143DBA02000FF737 /* singleViewController.h */,
+				01CEE7F3143DBA03000FF737 /* singleViewController.m */,
+				01CEE7F4143DBA03000FF737 /* singleViewController.xib */,
+				01CEE7E5143DB2FA000FF737 /* singleViewController_iPad.h */,
+				01CEE7E6143DB2FA000FF737 /* singleViewController_iPad.m */,
+				01CEE7E7143DB2FA000FF737 /* singleViewController_iPad.xib */,
+				017439971398E24A0036326A /* singleViewControllerWithBottomToolBar.h */,
+				017439981398E24A0036326A /* singleViewControllerWithBottomToolBar.m */,
+			);
+			name = "Sample app";
+			sourceTree = "<group>";
+		};
+		01B1D05B1394F3460031022B = {
+			isa = PBXGroup;
+			children = (
+				011CB40114449D8D00FA5BEC /* AFAppBoosterSDK-files */,
+				01830E0A139541BB005112CC /* Sample app */,
+				01B1D0691394F3460031022B /* Frameworks */,
+				01B1D0671394F3460031022B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01B1D0671394F3460031022B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01B1D0661394F3460031022B /* AFAppBoosterSDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01B1D0691394F3460031022B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01364F7D139E368200EFFF0A /* SystemConfiguration.framework */,
+				01B1D0A01394F3E00031022B /* CFNetwork.framework */,
+				01B1D09E1394F3CC0031022B /* QuartzCore.framework */,
+				01B1D06A1394F3460031022B /* UIKit.framework */,
+				01B1D06C1394F3470031022B /* Foundation.framework */,
+				01B1D06E1394F3470031022B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01B1D0711394F3470031022B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				011CB40B14449DE200FA5BEC /* en.lproj */,
+				011CB40E14449DE200FA5BEC /* Entitlements.plist */,
+				011CB40F14449DE200FA5BEC /* feedback.png */,
+				011CB41314449DE200FA5BEC /* icon_star.png */,
+				011CB41414449DE200FA5BEC /* icon.png */,
+				011CB41514449DE200FA5BEC /* icon@2x.png */,
+				011CB41614449DE200FA5BEC /* main.m */,
+				011CB41014449DE200FA5BEC /* firstView.h */,
+				011CB41114449DE200FA5BEC /* firstView.m */,
+				011CB41214449DE200FA5BEC /* firstView.xib */,
+			);
+			name = "Supporting Files";
+			path = AFAppBoosterSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01B1D0651394F3460031022B /* AFAppBoosterSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B1D0871394F3470031022B /* Build configuration list for PBXNativeTarget "AFAppBoosterSDK" */;
+			buildPhases = (
+				01B1D0621394F3460031022B /* Sources */,
+				01B1D0631394F3460031022B /* Frameworks */,
+				01B1D0641394F3460031022B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFAppBoosterSDK;
+			productName = AFAppBoosterSDK;
+			productReference = 01B1D0661394F3460031022B /* AFAppBoosterSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01B1D05D1394F3460031022B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 01B1D0601394F3460031022B /* Build configuration list for PBXProject "AFAppBoosterSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 01B1D05B1394F3460031022B;
+			productRefGroup = 01B1D0671394F3460031022B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01B1D0651394F3460031022B /* AFAppBoosterSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01B1D0641394F3460031022B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01830E2313967862005112CC /* MainWindow.xib in Resources */,
+				01CEE7E9143DB2FA000FF737 /* singleViewController_iPad.xib in Resources */,
+				01CEE7F6143DBA03000FF737 /* singleViewController.xib in Resources */,
+				011CB41714449DE200FA5BEC /* InfoPlist.strings in Resources */,
+				011CB41814449DE200FA5BEC /* Entitlements.plist in Resources */,
+				011CB41914449DE200FA5BEC /* feedback.png in Resources */,
+				011CB41B14449DE200FA5BEC /* firstView.xib in Resources */,
+				011CB41C14449DE200FA5BEC /* icon_star.png in Resources */,
+				011CB41D14449DE200FA5BEC /* icon.png in Resources */,
+				011CB41E14449DE200FA5BEC /* icon@2x.png in Resources */,
+				011CB42614449DEF00FA5BEC /* appStoreIcon.png in Resources */,
+				011CB42714449DEF00FA5BEC /* Default.png in Resources */,
+				011CB42814449DEF00FA5BEC /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01B1D0621394F3460031022B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01830E201396777F005112CC /* tabbarController.m in Sources */,
+				017439991398E24A0036326A /* singleViewControllerWithBottomToolBar.m in Sources */,
+				01CEE7E8143DB2FA000FF737 /* singleViewController_iPad.m in Sources */,
+				01CEE7F5143DBA03000FF737 /* singleViewController.m in Sources */,
+				011CB40814449D8D00FA5BEC /* AFABNotificationBar.m in Sources */,
+				011CB40914449D8D00FA5BEC /* AFNotificationBadge.m in Sources */,
+				011CB41A14449DE200FA5BEC /* firstView.m in Sources */,
+				011CB41F14449DE200FA5BEC /* main.m in Sources */,
+				011CB42514449DEF00FA5BEC /* AFAppBoosterSDKAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		011CB40C14449DE200FA5BEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				011CB40D14449DE200FA5BEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01B1D0851394F3470031022B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-all_load",
+					"-ObjC",
+				);
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01B1D0861394F3470031022B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Nicolas Jouannem";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-all_load",
+					"-ObjC",
+				);
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "D074FF50-F0BA-4AA9-98E4-6282F1A877CF";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		01B1D0881394F3470031022B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nicolas Jouannem (QHQ62U9D76)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFAppBoosterSDK-Prefix.pch";
+				INFOPLIST_FILE = "AFAppBoosterSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/AFAppBoosterSDK-files\"",
+					"\"$(SRCROOT)/AFAppBoosterSDK-files/Debug-universal\"",
+					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/AFAppBoosterSDK-dlqosfmroexetscretipcdpnjpwy/Build/Products/Debug-universal\"",
+					"\"$(SRCROOT)/../../../../../../../Library/Developer/Xcode/DerivedData/AppboosterSDK-gvunrhdzbeziznfsyyxjpsozxdvw/Build/Products/Release-universal\"",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "798ADC41-4B22-4A47-B234-E85B7E9D5FAD";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		01B1D0891394F3470031022B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFAppBoosterSDK-Prefix.pch";
+				INFOPLIST_FILE = "AFAppBoosterSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/AFAppBoosterSDK-files\"",
+					"\"$(SRCROOT)/AFAppBoosterSDK-files/Debug-universal\"",
+					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/AFAppBoosterSDK-dlqosfmroexetscretipcdpnjpwy/Build/Products/Debug-universal\"",
+					"\"$(SRCROOT)/../../../../../../../Library/Developer/Xcode/DerivedData/AppboosterSDK-gvunrhdzbeziznfsyyxjpsozxdvw/Build/Products/Release-universal\"",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01B1D0601394F3460031022B /* Build configuration list for PBXProject "AFAppBoosterSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B1D0851394F3470031022B /* Debug */,
+				01B1D0861394F3470031022B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01B1D0871394F3470031022B /* Build configuration list for PBXNativeTarget "AFAppBoosterSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B1D0881394F3470031022B /* Debug */,
+				01B1D0891394F3470031022B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01B1D05D1394F3460031022B /* Project object */;
+}
