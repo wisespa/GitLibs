@@ -1,0 +1,21 @@
+[submodule "KTOneFingerRotationGestureRecognizer"]
+	path = KTOneFingerRotationGestureRecognizer
+	url = https://github.com/kirbyt/KTOneFingerRotationGestureRecognizer.git
+[submodule "three20"]
+	path = three20
+	url = https://github.com/facebook/three20.git
+[submodule "UIGlossyButton"]
+	path = UIGlossyButton
+	url = https://github.com/waterlou/UIGlossyButton.git
+[submodule "TBHintView"]
+	path = TBHintView
+	url = https://github.com/touchbee/TBHintView.git
+[submodule "SVProgressHUD"]
+	path = SVProgressHUD
+	url = https://github.com/samvermette/SVProgressHUD.git
+[submodule "SDWebImage"]
+	path = SDWebImage
+	url = https://github.com/rs/SDWebImage.git
+[submodule "nimbus"]
+	path = nimbus
+	url = https://github.com/jverkoey/nimbus.git
