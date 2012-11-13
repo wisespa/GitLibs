@@ -1,6 +1,3 @@
-[submodule "KTOneFingerRotationGestureRecognizer"]
-	path = KTOneFingerRotationGestureRecognizer
-	url = https://github.com/kirbyt/KTOneFingerRotationGestureRecognizer.git
 [submodule "three20"]
 	path = three20
 	url = https://github.com/facebook/three20.git
