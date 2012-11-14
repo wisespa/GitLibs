@@ -31,3 +31,6 @@
 [submodule "GusUtils"]
 	path = GusUtils
 	url = https://github.com/gpambrozio/GusUtils.git
+[submodule "AviaryIOSSDK"]
+	path = AviaryIOSSDK
+	url = https://github.com/AviaryInc/Mobile-Feather-SDK-for-iOS.git
