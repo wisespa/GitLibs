@@ -40,3 +40,4 @@
 [submodule "FWTPopover"]
 	path = FWTPopover
 	url = https://github.com/FutureWorkshops/FWTPopover.git
+	ignore = dirty
