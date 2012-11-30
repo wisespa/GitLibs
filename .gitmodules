@@ -41,3 +41,6 @@
 [submodule "GPUImage"]
 	path = GPUImage
 	url = https://github.com/BradLarson/GPUImage.git
+[submodule "JCGridMenu"]
+	path = JCGridMenu
+	url = https://github.com/joecarney/JCGridMenu.git
