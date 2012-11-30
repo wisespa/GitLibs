@@ -34,9 +34,6 @@
 [submodule "AviaryIOSSDK"]
 	path = AviaryIOSSDK
 	url = https://github.com/AviaryInc/Mobile-Feather-SDK-for-iOS.git
-[submodule "JCGridMenu"]
-	path = JCGridMenu
-	url = https://github.com/joecarney/JCGridMenu.git
 [submodule "FWTPopover"]
 	path = FWTPopover
 	url = https://github.com/FutureWorkshops/FWTPopover.git
