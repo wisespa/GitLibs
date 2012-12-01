@@ -1,0 +1,14 @@
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#define REVMOB_ID @"4fd619388d314b0008000213"
+
+#define REVMOB_PLACEMENT_ID @"5058bc5f5d9fb60800000001"

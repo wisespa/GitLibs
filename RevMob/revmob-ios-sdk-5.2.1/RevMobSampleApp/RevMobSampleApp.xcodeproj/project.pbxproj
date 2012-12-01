@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B385ABC514897AB3002CE9BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B385ABC414897AB3002CE9BE /* UIKit.framework */; };
+		B385ABC714897AB3002CE9BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B385ABC614897AB3002CE9BE /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B385ABC914897AB3002CE9BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B385ABC814897AB3002CE9BE /* CoreGraphics.framework */; };
+		B385ABCF14897AB3002CE9BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B385ABCD14897AB3002CE9BE /* InfoPlist.strings */; };
+		B385ABD114897AB3002CE9BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B385ABD014897AB3002CE9BE /* main.m */; };
+		B385ABD514897AB3002CE9BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B385ABD414897AB3002CE9BE /* AppDelegate.m */; };
+		B385ABD814897AB3002CE9BE /* SampleAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B385ABD714897AB3002CE9BE /* SampleAppViewController.m */; };
+		C688E0051509071A001B68E1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C688E0041509071A001B68E1 /* SystemConfiguration.framework */; };
+		D919239D160BB5350058C4F0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D919239C160BB5350058C4F0 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D99B43CD162C97F900E72791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B385ABD014897AB3002CE9BE /* main.m */; };
+		D99B43CE162C97F900E72791 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B385ABD414897AB3002CE9BE /* AppDelegate.m */; };
+		D99B43CF162C97F900E72791 /* SampleAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B385ABD714897AB3002CE9BE /* SampleAppViewController.m */; };
+		D99B43D1162C97F900E72791 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C688E0041509071A001B68E1 /* SystemConfiguration.framework */; };
+		D99B43D2162C97F900E72791 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B385ABC414897AB3002CE9BE /* UIKit.framework */; };
+		D99B43D3162C97F900E72791 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B385ABC614897AB3002CE9BE /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D99B43D4162C97F900E72791 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B385ABC814897AB3002CE9BE /* CoreGraphics.framework */; };
+		D99B43D5162C97F900E72791 /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99F1A8215A60B010099DA09 /* RevMobAds.framework */; };
+		D99B43D6162C97F900E72791 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D919239C160BB5350058C4F0 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D99B43D8162C97F900E72791 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B385ABCD14897AB3002CE9BE /* InfoPlist.strings */; };
+		D99B43D9162C97F900E72791 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C386741603B2DC00168C75 /* Default-568h@2x.png */; };
+		D99F1A8315A60B010099DA09 /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99F1A8215A60B010099DA09 /* RevMobAds.framework */; };
+		D9C386751603B2DC00168C75 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C386741603B2DC00168C75 /* Default-568h@2x.png */; };
+		D9E2E774162C9867006A8FB8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90C2AB7162C82F500D195D7 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B385ABC014897AB3002CE9BE /* RevMobAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevMobAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B385ABC414897AB3002CE9BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B385ABC614897AB3002CE9BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B385ABC814897AB3002CE9BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B385ABCC14897AB3002CE9BE /* RevMobSampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RevMobSampleApp-Info.plist"; sourceTree = "<group>"; };
+		B385ABCE14897AB3002CE9BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B385ABD014897AB3002CE9BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B385ABD214897AB3002CE9BE /* RevMobSampleApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RevMobSampleApp-Prefix.pch"; sourceTree = "<group>"; };
+		B385ABD314897AB3002CE9BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B385ABD414897AB3002CE9BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B385ABD614897AB3002CE9BE /* SampleAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleAppViewController.h; sourceTree = "<group>"; };
+		B385ABD714897AB3002CE9BE /* SampleAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleAppViewController.m; sourceTree = "<group>"; };
+		C688E0041509071A001B68E1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D90C2AB7162C82F500D195D7 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D919239C160BB5350058C4F0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D99B43DD162C97F900E72791 /* RevMobAds copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RevMobAds copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99F1A8215A60B010099DA09 /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevMobAds.framework; sourceTree = "<group>"; };
+		D9C386741603B2DC00168C75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B385ABBD14897AB3002CE9BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C688E0051509071A001B68E1 /* SystemConfiguration.framework in Frameworks */,
+				B385ABC514897AB3002CE9BE /* UIKit.framework in Frameworks */,
+				B385ABC714897AB3002CE9BE /* Foundation.framework in Frameworks */,
+				B385ABC914897AB3002CE9BE /* CoreGraphics.framework in Frameworks */,
+				D99F1A8315A60B010099DA09 /* RevMobAds.framework in Frameworks */,
+				D919239D160BB5350058C4F0 /* StoreKit.framework in Frameworks */,
+				D9E2E774162C9867006A8FB8 /* AdSupport.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99B43D0162C97F900E72791 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99B43D1162C97F900E72791 /* SystemConfiguration.framework in Frameworks */,
+				D99B43D2162C97F900E72791 /* UIKit.framework in Frameworks */,
+				D99B43D3162C97F900E72791 /* Foundation.framework in Frameworks */,
+				D99B43D4162C97F900E72791 /* CoreGraphics.framework in Frameworks */,
+				D99B43D5162C97F900E72791 /* RevMobAds.framework in Frameworks */,
+				D99B43D6162C97F900E72791 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B385ABB514897AB3002CE9BE = {
+			isa = PBXGroup;
+			children = (
+				B385ABCA14897AB3002CE9BE /* Classes */,
+				B385ABC314897AB3002CE9BE /* Frameworks */,
+				B385ABC114897AB3002CE9BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B385ABC114897AB3002CE9BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B385ABC014897AB3002CE9BE /* RevMobAds.app */,
+				D99B43DD162C97F900E72791 /* RevMobAds copy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B385ABC314897AB3002CE9BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D90C2AB7162C82F500D195D7 /* AdSupport.framework */,
+				D99F1A8215A60B010099DA09 /* RevMobAds.framework */,
+				C688E0041509071A001B68E1 /* SystemConfiguration.framework */,
+				B385ABC414897AB3002CE9BE /* UIKit.framework */,
+				D919239C160BB5350058C4F0 /* StoreKit.framework */,
+				B385ABC614897AB3002CE9BE /* Foundation.framework */,
+				B385ABC814897AB3002CE9BE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B385ABCA14897AB3002CE9BE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B385ABD314897AB3002CE9BE /* AppDelegate.h */,
+				B385ABD414897AB3002CE9BE /* AppDelegate.m */,
+				B385ABD614897AB3002CE9BE /* SampleAppViewController.h */,
+				B385ABD714897AB3002CE9BE /* SampleAppViewController.m */,
+				B385ABCB14897AB3002CE9BE /* Supporting Files */,
+			);
+			name = Classes;
+			path = RevMobSampleApp;
+			sourceTree = "<group>";
+		};
+		B385ABCB14897AB3002CE9BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9C386741603B2DC00168C75 /* Default-568h@2x.png */,
+				B385ABCC14897AB3002CE9BE /* RevMobSampleApp-Info.plist */,
+				B385ABCD14897AB3002CE9BE /* InfoPlist.strings */,
+				B385ABD014897AB3002CE9BE /* main.m */,
+				B385ABD214897AB3002CE9BE /* RevMobSampleApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B385ABBF14897AB3002CE9BE /* RevMobAds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B385ABE114897AB3002CE9BE /* Build configuration list for PBXNativeTarget "RevMobAds" */;
+			buildPhases = (
+				B385ABBC14897AB3002CE9BE /* Sources */,
+				B385ABBD14897AB3002CE9BE /* Frameworks */,
+				B385ABBE14897AB3002CE9BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RevMobAds;
+			productName = BCFAds;
+			productReference = B385ABC014897AB3002CE9BE /* RevMobAds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D99B43CB162C97F900E72791 /* RevMobAds old */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D99B43DA162C97F900E72791 /* Build configuration list for PBXNativeTarget "RevMobAds old" */;
+			buildPhases = (
+				D99B43CC162C97F900E72791 /* Sources */,
+				D99B43D0162C97F900E72791 /* Frameworks */,
+				D99B43D7162C97F900E72791 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RevMobAds old";
+			productName = BCFAds;
+			productReference = D99B43DD162C97F900E72791 /* RevMobAds copy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B385ABB714897AB3002CE9BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = B385ABBA14897AB3002CE9BE /* Build configuration list for PBXProject "RevMobSampleApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B385ABB514897AB3002CE9BE;
+			productRefGroup = B385ABC114897AB3002CE9BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B385ABBF14897AB3002CE9BE /* RevMobAds */,
+				D99B43CB162C97F900E72791 /* RevMobAds old */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B385ABBE14897AB3002CE9BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B385ABCF14897AB3002CE9BE /* InfoPlist.strings in Resources */,
+				D9C386751603B2DC00168C75 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99B43D7162C97F900E72791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99B43D8162C97F900E72791 /* InfoPlist.strings in Resources */,
+				D99B43D9162C97F900E72791 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B385ABBC14897AB3002CE9BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B385ABD114897AB3002CE9BE /* main.m in Sources */,
+				B385ABD514897AB3002CE9BE /* AppDelegate.m in Sources */,
+				B385ABD814897AB3002CE9BE /* SampleAppViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99B43CC162C97F900E72791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99B43CD162C97F900E72791 /* main.m in Sources */,
+				D99B43CE162C97F900E72791 /* AppDelegate.m in Sources */,
+				D99B43CF162C97F900E72791 /* SampleAppViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B385ABCD14897AB3002CE9BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B385ABCE14897AB3002CE9BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B385ABDF14897AB3002CE9BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "RevMobSampleApp/RevMobSampleApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/RevMobSampleApp/RevMobSampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B385ABE014897AB3002CE9BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = "RevMobSampleApp/RevMobSampleApp-Prefix.pch";
+				GCC_THUMB_SUPPORT = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/RevMobSampleApp/RevMobSampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B385ABE214897AB3002CE9BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B385ABE314897AB3002CE9BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = NO;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D99B43DB162C97F900E72791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "RevMobAds copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D99B43DC162C97F900E72791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "RevMobAds copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B385ABBA14897AB3002CE9BE /* Build configuration list for PBXProject "RevMobSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B385ABDF14897AB3002CE9BE /* Debug */,
+				B385ABE014897AB3002CE9BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B385ABE114897AB3002CE9BE /* Build configuration list for PBXNativeTarget "RevMobAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B385ABE214897AB3002CE9BE /* Debug */,
+				B385ABE314897AB3002CE9BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D99B43DA162C97F900E72791 /* Build configuration list for PBXNativeTarget "RevMobAds old" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99B43DB162C97F900E72791 /* Debug */,
+				D99B43DC162C97F900E72791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B385ABB714897AB3002CE9BE /* Project object */;
+}
