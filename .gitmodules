@@ -44,3 +44,6 @@
 [submodule "PullableView"]
 	path = PullableView
 	url = https://github.com/crocodella/PullableView.git
+[submodule "MKStoreKit"]
+	path = MKStoreKit
+	url = https://github.com/wisespa/MKStoreKit.git
