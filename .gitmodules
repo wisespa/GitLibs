@@ -16,9 +16,6 @@
 [submodule "nimbus"]
 	path = nimbus
 	url = https://github.com/jverkoey/nimbus.git
-[submodule "MKStoreKit"]
-	path = MKStoreKit
-	url = https://github.com/wisespa/MKStoreKit.git
 [submodule "MBProgressHUD"]
 	path = MBProgressHUD
 	url = https://github.com/jdg/MBProgressHUD.git
