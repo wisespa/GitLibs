@@ -44,3 +44,6 @@
 [submodule "MKStoreKit"]
 	path = MKStoreKit
 	url = https://github.com/wisespa/MKStoreKit.git
+[submodule "JCGridMenu"]
+	path = JCGridMenu
+	url = https://github.com/wisespa/JCGridMenu.git
