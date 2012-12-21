@@ -38,9 +38,6 @@
 [submodule "GPUImage"]
 	path = GPUImage
 	url = https://github.com/BradLarson/GPUImage.git
-[submodule "JCGridMenu"]
-	path = JCGridMenu
-	url = https://github.com/joecarney/JCGridMenu.git
 [submodule "PullableView"]
 	path = PullableView
 	url = https://github.com/crocodella/PullableView.git
