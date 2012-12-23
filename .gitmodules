@@ -47,3 +47,6 @@
 [submodule "JCGridMenu"]
 	path = JCGridMenu
 	url = https://github.com/wisespa/JCGridMenu.git
+[submodule "ShareKit"]
+	path = ShareKit
+	url = https://github.com/ShareKit/ShareKit.git
