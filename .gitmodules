@@ -50,3 +50,6 @@
 [submodule "ShareKit"]
 	path = ShareKit
 	url = https://github.com/ShareKit/ShareKit.git
+[submodule "EEToolbarCenterButton"]
+	path = EEToolbarCenterButton
+	url = https://github.com/el-eleven/EEToolbarCenterButton.git
