@@ -53,3 +53,6 @@
 [submodule "EEToolbarCenterButton"]
 	path = EEToolbarCenterButton
 	url = https://github.com/el-eleven/EEToolbarCenterButton.git
+[submodule "GRAlertView"]
+	path = GRAlertView
+	url = git://github.com/goncz9/GRAlertView.git
