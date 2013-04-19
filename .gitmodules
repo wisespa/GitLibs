@@ -56,3 +56,6 @@
 [submodule "GRAlertView"]
 	path = GRAlertView
 	url = git://github.com/goncz9/GRAlertView.git
+[submodule "CMPopTipView"]
+	path = CMPopTipView
+	url = https://github.com/chrismiles/CMPopTipView.git
