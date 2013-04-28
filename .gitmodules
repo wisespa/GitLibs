@@ -68,3 +68,6 @@
 [submodule "MMMarkdown"]
 	path = MMMarkdown
 	url = https://github.com/mdiep/MMMarkdown.git
+[submodule "NVUIGradientButton"]
+	path = NVUIGradientButton
+	url = git://github.com/nverinaud/NVUIGradientButton.git
