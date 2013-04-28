@@ -77,3 +77,6 @@
 [submodule "SVSegmentedControl"]
 	path = SVSegmentedControl
 	url = git://github.com/samvermette/SVSegmentedControl.git
+[submodule "UIEffectDesignerView"]
+	path = UIEffectDesignerView
+	url = git://github.com/icanzilb/UIEffectDesignerView.git
