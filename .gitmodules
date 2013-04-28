@@ -71,3 +71,6 @@
 [submodule "NVUIGradientButton"]
 	path = NVUIGradientButton
 	url = git://github.com/nverinaud/NVUIGradientButton.git
+[submodule "MJPopupViewController"]
+	path = MJPopupViewController
+	url = git://github.com/martinjuhasz/MJPopupViewController.git
