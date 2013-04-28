@@ -74,3 +74,6 @@
 [submodule "MJPopupViewController"]
 	path = MJPopupViewController
 	url = git://github.com/martinjuhasz/MJPopupViewController.git
+[submodule "SVSegmentedControl"]
+	path = SVSegmentedControl
+	url = git://github.com/samvermette/SVSegmentedControl.git
