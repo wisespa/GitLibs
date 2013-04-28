@@ -65,3 +65,6 @@
 [submodule "FXLabel"]
 	path = FXLabel
 	url = git://github.com/nicklockwood/FXLabel.git
+[submodule "MMMarkdown"]
+	path = MMMarkdown
+	url = https://github.com/mdiep/MMMarkdown.git
