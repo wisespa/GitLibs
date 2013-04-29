@@ -62,9 +62,6 @@
 [submodule "UIDevice-with-UniqueIdentifier-for-iOS-5"]
 	path = UIDevice-with-UniqueIdentifier-for-iOS-5
 	url = https://github.com/gekitz/UIDevice-with-UniqueIdentifier-for-iOS-5.git
-[submodule "FXLabel"]
-	path = FXLabel
-	url = git://github.com/nicklockwood/FXLabel.git
 [submodule "MMMarkdown"]
 	path = MMMarkdown
 	url = https://github.com/mdiep/MMMarkdown.git
@@ -80,3 +77,6 @@
 [submodule "UIEffectDesignerView"]
 	path = UIEffectDesignerView
 	url = git://github.com/icanzilb/UIEffectDesignerView.git
+[submodule "FXLabel"]
+	path = FXLabel
+	url = git://github.com/nicklockwood/FXLabel.git
