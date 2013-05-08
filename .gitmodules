@@ -80,3 +80,6 @@
 [submodule "FXLabel"]
 	path = FXLabel
 	url = git://github.com/nicklockwood/FXLabel.git
+[submodule "iCarousel"]
+	path = iCarousel
+	url = git://github.com/nicklockwood/iCarousel.git
