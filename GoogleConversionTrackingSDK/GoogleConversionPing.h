@@ -20,13 +20,24 @@
 //   [GoogleConversionPing pingWithConversionId:@"your id here"
 //                                        label:@"your label here"
 //                                        value:@"your app's price here"
-//                                 isRepeatable:YES/NO
-//                                     idfaOnly:YES/NO];
+//                                 isRepeatable:YES/NO];
 // For example, to track downloads of your app, add the code to your application
 // delegate's application:didFinishLaunchingWithOptions: method.
 @interface GoogleConversionPing : NSObject
 
 // Reports a conversion to Google.
++ (void)pingWithConversionId:(NSString *)conversionId
+                       label:(NSString *)label
+                       value:(NSString *)value
+                isRepeatable:(BOOL)isRepeatable;
+
+// Returns the Google Conversion SDK version.
++ (NSString *)sdkVersion;
+
+#pragma mark - Deprecated
+
+// UDID has been deprecated and this SDK only uses the IDFA as of version 1.2.0.
+// Setting the |idfaOnly| parameter is a no-op.
 + (void)pingWithConversionId:(NSString *)conversionId
                        label:(NSString *)label
                        value:(NSString *)value

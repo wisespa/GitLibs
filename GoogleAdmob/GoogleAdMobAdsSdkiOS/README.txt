@@ -11,5 +11,3 @@ Requirements:
 
 The latest documentation and code samples are available at:
 https://developers.google.com/mobile-ads-sdk/docs/
-
-version 6.4.0
