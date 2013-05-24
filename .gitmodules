@@ -83,3 +83,6 @@
 [submodule "iCarousel"]
 	path = iCarousel
 	url = git://github.com/nicklockwood/iCarousel.git
+[submodule "PlayHavenSDK"]
+	path = PlayHavenSDK
+	url = https://github.com/playhaven/sdk-ios.git
