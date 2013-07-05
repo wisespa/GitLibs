@@ -86,6 +86,3 @@
 [submodule "PlayHavenSDK"]
 	path = PlayHavenSDK
 	url = https://github.com/playhaven/sdk-ios.git
-[submodule "cocos2d-iphone"]
-	path = cocos2d-iphone
-	url = git://github.com/cocos2d/cocos2d-iphone.git
