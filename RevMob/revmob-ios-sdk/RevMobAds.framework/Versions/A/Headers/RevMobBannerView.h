@@ -5,7 +5,7 @@
 
 @class RevMobBannerView;
 typedef void (^RevMobBannerViewSuccessfullHandler)(RevMobBannerView *banner);
-typedef void (^RevMobBannerViewFailureHandler)(RevMobBannerView *banner, NSError *erro);
+typedef void (^RevMobBannerViewFailureHandler)(RevMobBannerView *banner, NSError *error);
 typedef void (^RevMobBannerViewOnclickHandler)(RevMobBannerView *banner);
 
 /**
@@ -24,9 +24,32 @@ typedef void (^RevMobBannerViewOnclickHandler)(RevMobBannerView *banner);
 
 /**
  Use this method to load the ad.
+ 
+ @see loadWithSuccessHandler:andLoadFailHandler:onClickHandler:
  */
 - (void)loadAd;
 
+/**
+ Use this method to load the ad.
+ 
+ Example of usage:
+ 
+     [banner loadWithSuccessHandler:^(RevMobBannerView *banner) {
+       [banner setFrame:CGRectMake(10, 20, 200, 40)];
+       [self.view addSubview:banner];
+       NSLog(@"Ad loaded");
+     } andLoadFailHandler:^(RevMobBannerView *banner, NSError *error) {
+       NSLog(@"Ad error: %@",error);
+     } onClickHandler:^(RevMobBannerView *banner) {
+       NSLog(@"Ad clicked");
+     }];
+
+ @param onAdLoadedHandler: A block that will be executed once the ad is loaded, can be nil.
+
+ @param onAdFailedHandler: A block that will be executed once any error happen, can be nil.
+
+ @param onClickHandler: A block that will be executed once the user click on the ad, can be nil.
+ */
 - (void)loadWithSuccessHandler:(RevMobBannerViewSuccessfullHandler)onAdLoadedHandler
             andLoadFailHandler:(RevMobBannerViewFailureHandler)onAdFailedHandler
                 onClickHandler:(RevMobBannerViewOnclickHandler)onClickHandler;

@@ -42,9 +42,31 @@ typedef void (^RevMobBannerOnClickHandler)(RevMobBanner *banner);
 
 /**
  Use this method to load the ad.
+
+ @see loadWithSuccessHandler:andLoadFailHandler:onClickHandler:
  */
 - (void)loadAd;
 
+/**
+ Use this method to load the ad.
+
+ Example of usage:
+
+     [banner loadWithSuccessHandler:^(RevMobBanner *banner) {
+       [banner showAd];
+       NSLog(@"Ad loaded");
+     } andLoadFailHandler:^(RevMobBanner *banner, NSError *error) {
+       NSLog(@"Ad error: %@",error);
+     } onClickHandler:^(RevMobBanner *banner) {
+       NSLog(@"Ad clicked");
+     }];
+
+ @param onAdLoadedHandler: A block that will be executed once the ad is loaded, can be nil.
+
+ @param onAdFailedHandler: A block that will be executed once any error happen, can be nil.
+
+ @param onClickHandler: A block that will be executed once the user click on the ad, can be nil.
+ */
 - (void)loadWithSuccessHandler:(RevMobBannerSuccessfullHandler)onAdLoadedHandler
             andLoadFailHandler:(RevMobBannerFailureHandler)onAdFailedHandler
                 onClickHandler:(RevMobBannerOnClickHandler)onClickHandler;
