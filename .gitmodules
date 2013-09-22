@@ -86,3 +86,7 @@
 [submodule "cocos2d-iphone"]
 	path = cocos2d-iphone
 	url = git://github.com/cocos2d/cocos2d-iphone.git
+[submodule "SDWebImage"]
+	path = SDWebImage
+	url = https://github.com/rs/SDWebImage
+	ignore = dirty
