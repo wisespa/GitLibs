@@ -10,9 +10,6 @@
 [submodule "SVProgressHUD"]
 	path = SVProgressHUD
 	url = https://github.com/samvermette/SVProgressHUD.git
-[submodule "SDWebImage"]
-	path = SDWebImage
-	url = https://github.com/rs/SDWebImage.git
 [submodule "nimbus"]
 	path = nimbus
 	url = https://github.com/jverkoey/nimbus.git
