@@ -90,3 +90,6 @@
 	path = SDWebImage
 	url = https://github.com/rs/SDWebImage
 	ignore = dirty
+[submodule "ECSlidingViewController"]
+	path = ECSlidingViewController
+	url = https://github.com/ECSlidingViewController/ECSlidingViewController.git
