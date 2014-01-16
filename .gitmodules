@@ -93,9 +93,6 @@
 [submodule "ECSlidingViewController"]
 	path = ECSlidingViewController
 	url = https://github.com/ECSlidingViewController/ECSlidingViewController.git
-[submodule "NRGramKit"]
-	path = NRGramKit
-	url = https://github.com/NextRoot/NRGramKit.git
 [submodule "AFNetworking"]
 	path = AFNetworking
 	url = https://github.com/AFNetworking/AFNetworking.git
