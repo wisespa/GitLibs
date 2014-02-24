@@ -1,47 +1,63 @@
-/* Copyright (c) 2011 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+//
+//  GoogleConversionPing.h
+//  Copyright 2011 Google Inc. All rights reserved.
+//
+//  *** Deprecated ***
+//    * Use ACTReporter.h for AdWords conversions and remarketing.
+//    * Use DCTReporter.h for DoubleClick for Publishers conversions.
+//
 
 #import <Foundation/Foundation.h>
 
-// This class provides a way to make easy asynchronous requests to Google for
-// conversion pings. Use the code as follows:
-//   [GoogleConversionPing pingWithConversionId:@"your id here"
-//                                        label:@"your label here"
-//                                        value:@"your app's price here"
-//                                 isRepeatable:YES/NO];
-// For example, to track downloads of your app, add the code to your application
-// delegate's application:didFinishLaunchingWithOptions: method.
+/// Supported conversion ping types.
+typedef NS_ENUM(NSInteger, ConversionType) {
+  /// AdWords conversion type.
+  kGoogleConversion __attribute__((deprecated)),
+  /// DoubleClick for Publishers conversion type.
+  kDoubleClickConversion __attribute__((deprecated))
+};
+
+/// This class provides a way to make easy asynchronous requests to Google for conversion or
+/// remarketing pings.
+__attribute__((deprecated(" use ACTReporter subclasses.")))
 @interface GoogleConversionPing : NSObject
 
-// Reports a conversion to Google.
-+ (void)pingWithConversionId:(NSString *)conversionId
-                       label:(NSString *)label
-                       value:(NSString *)value
-                isRepeatable:(BOOL)isRepeatable;
-
-// Returns the Google Conversion SDK version.
-+ (NSString *)sdkVersion;
-
-#pragma mark - Deprecated
-
-// UDID has been deprecated and this SDK only uses the IDFA as of version 1.2.0.
-// Setting the |idfaOnly| parameter is a no-op.
+/// Reports a conversion to Google.
 + (void)pingWithConversionId:(NSString *)conversionId
                        label:(NSString *)label
                        value:(NSString *)value
                 isRepeatable:(BOOL)isRepeatable
-                    idfaOnly:(BOOL)idfaOnly;
+    __attribute__((deprecated(" use ACTConversionReporter.")));
+
+/// Reports a conversion to the ad network according to the type.
++ (void)pingWithConversionId:(NSString *)conversionId
+                        type:(ConversionType)type
+                       label:(NSString *)label
+                       value:(NSString *)value
+                isRepeatable:(BOOL)isRepeatable
+    __attribute__((deprecated(" use ACTConversionReporter.")));
+
+/// Report a remarketing ping to Google.
++ (void)pingRemarketingWithConversionId:(NSString *)conversionId
+                                  label:(NSString *)label
+                             screenName:(NSString *)screenName
+                       customParameters:(NSDictionary *)customParameters
+    __attribute__((deprecated(" use ACTRemarketingReporter.")));
+
+/// Register a click referrer from the Google ad click URL.
++ (BOOL)registerReferrer:(NSURL *)clickURL
+    __attribute__((deprecated(" use ACTConversionReporter's +registerReferrer")));
+
+/// Returns the Google Conversion SDK version.
++ (NSString *)sdkVersion __attribute__((deprecated(" use ACTReporter's +SDKVersion.")));
+
+/// UDID has been deprecated and this SDK only uses the IDFA as of version 1.2.0. The |idfaOnly|
+/// parameter has no effect.
++ (void)pingWithConversionId:(NSString *)conversionId
+                       label:(NSString *)label
+                       value:(NSString *)value
+                isRepeatable:(BOOL)isRepeatable
+                    idfaOnly:(BOOL)idfaOnly
+    __attribute__((deprecated(" use ACTConversionReporter.")));
 
 @end
