@@ -2,7 +2,7 @@
 Google AdMob Ads SDK for iOS
 ============================
 
-Version 6.7.0
+Version 6.8.0
 
 This is the Google AdMob Ads SDK for iOS.
 
@@ -13,4 +13,3 @@ Requirements:
 
 The latest documentation and code samples are available at:
 https://developers.google.com/mobile-ads-sdk/docs/
-
