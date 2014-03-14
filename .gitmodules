@@ -96,6 +96,3 @@
 [submodule "AFNetworking"]
 	path = AFNetworking
 	url = https://github.com/AFNetworking/AFNetworking.git
-[submodule "NRGramKit"]
-	path = NRGramKit
-	url = https://github.com/wisespa/NRGramKit.git
