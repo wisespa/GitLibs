@@ -1,0 +1,1238 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ALIncentivizedInterstitialAd Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AppLovin iOS SDK 2.4.2 </a></h1>
+				<a id="developerHome" href="../index.html">AppLovin</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ALIncentivizedInterstitialAd Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/adDisplayDelegate">&nbsp;&nbsp;&nbsp;&nbsp;adDisplayDelegate</option>
+	
+	<option value="//api/name/adVideoPlaybackDelegate">&nbsp;&nbsp;&nbsp;&nbsp;adVideoPlaybackDelegate</option>
+	
+	<option value="//api/name/readyForDisplay">&nbsp;&nbsp;&nbsp;&nbsp;readyForDisplay</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/isReadyForDisplay">&nbsp;&nbsp;&nbsp;&nbsp;+ isReadyForDisplay</option>
+	
+	<option value="//api/name/preloadAndNotify:">&nbsp;&nbsp;&nbsp;&nbsp;+ preloadAndNotify:</option>
+	
+	<option value="//api/name/setUserIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;+ setUserIdentifier:</option>
+	
+	<option value="//api/name/shared">&nbsp;&nbsp;&nbsp;&nbsp;+ shared</option>
+	
+	<option value="//api/name/showAndNotify:">&nbsp;&nbsp;&nbsp;&nbsp;+ showAndNotify:</option>
+	
+	<option value="//api/name/showOver:andNotify:">&nbsp;&nbsp;&nbsp;&nbsp;+ showOver:andNotify:</option>
+	
+	<option value="//api/name/userIdentifier">&nbsp;&nbsp;&nbsp;&nbsp;+ userIdentifier</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/dismiss">&nbsp;&nbsp;&nbsp;&nbsp;- dismiss</option>
+	
+	<option value="//api/name/initWithSdk:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithSdk:</option>
+	
+	<option value="//api/name/preloadAndNotify:">&nbsp;&nbsp;&nbsp;&nbsp;- preloadAndNotify:</option>
+	
+	<option value="//api/name/showAndNotify:">&nbsp;&nbsp;&nbsp;&nbsp;- showAndNotify:</option>
+	
+	<option value="//api/name/showOver:andNotify:">&nbsp;&nbsp;&nbsp;&nbsp;- showOver:andNotify:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Ad Delegates">Ad Delegates</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Integration, Class Methods">Integration, Class Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Integration, Instance Methods">Integration, Instance Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Custom User Identifiers">Custom User Identifiers</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adDisplayDelegate">adDisplayDelegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adVideoPlaybackDelegate">adVideoPlaybackDelegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readyForDisplay">readyForDisplay</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isReadyForDisplay">isReadyForDisplay</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadAndNotify:">preloadAndNotify:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUserIdentifier:">setUserIdentifier:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shared">shared</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showAndNotify:">showAndNotify:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showOver:andNotify:">showOver:andNotify:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userIdentifier">userIdentifier</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dismiss">dismiss</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithSdk:">initWithSdk:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preloadAndNotify:">preloadAndNotify:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showAndNotify:">showAndNotify:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showOver:andNotify:">showOver:andNotify:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ALIncentivizedInterstitialAd Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ALIncentivizedInterstitialAd Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ALIncentivizedInterstitialAd.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class is used to show rewarded videos to the user. These differ from regular interstitials in that they allow you to provide you user virtual currency in exchange for watching a video.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Ad Delegates" name="task_Ad Delegates"></a>
+						<h3 class="subsubtitle task-title">Ad Delegates</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adDisplayDelegate">&nbsp;&nbsp;adDisplayDelegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/adVideoPlaybackDelegate">&nbsp;&nbsp;adVideoPlaybackDelegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Integration, Class Methods" name="task_Integration, Class Methods"></a>
+						<h3 class="subsubtitle task-title">Integration, Class Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shared">+&nbsp;shared</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadAndNotify:">+&nbsp;preloadAndNotify:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isReadyForDisplay">+&nbsp;isReadyForDisplay</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showAndNotify:">+&nbsp;showAndNotify:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showOver:andNotify:">+&nbsp;showOver:andNotify:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Integration, Instance Methods" name="task_Integration, Instance Methods"></a>
+						<h3 class="subsubtitle task-title">Integration, Instance Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithSdk:">&ndash;&nbsp;initWithSdk:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preloadAndNotify:">&ndash;&nbsp;preloadAndNotify:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/readyForDisplay">&nbsp;&nbsp;readyForDisplay</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showAndNotify:">&ndash;&nbsp;showAndNotify:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showOver:andNotify:">&ndash;&nbsp;showOver:andNotify:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dismiss">&ndash;&nbsp;dismiss</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Custom User Identifiers" name="task_Custom User Identifiers"></a>
+						<h3 class="subsubtitle task-title">Custom User Identifiers</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setUserIdentifier:">+&nbsp;setUserIdentifier:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userIdentifier">+&nbsp;userIdentifier</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/adDisplayDelegate" title="adDisplayDelegate"></a>
+	<h3 class="subsubtitle method-title">adDisplayDelegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An object conforming to the <a href="../Protocols/ALAdDisplayDelegate.html">ALAdDisplayDelegate</a> protocol, which, if set, will be notified of ad show/hide events.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) id&lt;ALAdDisplayDelegate&gt; adDisplayDelegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>An object conforming to the <a href="../Protocols/ALAdDisplayDelegate.html">ALAdDisplayDelegate</a> protocol, which, if set, will be notified of ad show/hide events.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALIncentivizedInterstitialAd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/adVideoPlaybackDelegate" title="adVideoPlaybackDelegate"></a>
+	<h3 class="subsubtitle method-title">adVideoPlaybackDelegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An object conforming to the <a href="../Protocols/ALAdVideoPlaybackDelegate.html">ALAdVideoPlaybackDelegate</a> protocol, which, if set, will be notified of video start/stop events.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) id&lt;ALAdVideoPlaybackDelegate&gt; adVideoPlaybackDelegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>An object conforming to the <a href="../Protocols/ALAdVideoPlaybackDelegate.html">ALAdVideoPlaybackDelegate</a> protocol, which, if set, will be notified of video start/stop events.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALIncentivizedInterstitialAd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/readyForDisplay" title="readyForDisplay"></a>
+	<h3 class="subsubtitle method-title">readyForDisplay</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check if an ad is currently ready on this object. You must call preloadAndNotify in order to reach this state.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, atomic, getter=isReadyForDisplay) BOOL readyForDisplay</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if an ad has been loaded into this incentivized interstitial and is ready to display. NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Check if an ad is currently ready on this object. You must call preloadAndNotify in order to reach this state.</p>
+
+<p>It is highly recommended that you implement an asynchronous flow (using an <a href="../Protocols/ALAdLoadDelegate.html">ALAdLoadDelegate</a> with preloadAndNotify) rather than checking this property. This class does not contain a queue and can hold only one preloaded ad at a time. Therefore, you should NOT simply call <a href="#//api/name/preloadAndNotify:">preloadAndNotify:</a> any time this method returns NO; it is important to invoke only one ad load - then not invoke any further loads until the ad has been closed (e.g., ALAdDisplayDelegate&rsquo;s adWasHidden callback).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALIncentivizedInterstitialAd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/isReadyForDisplay" title="isReadyForDisplay"></a>
+	<h3 class="subsubtitle method-title">isReadyForDisplay</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check if an ad is currently ready on this object. You must call preloadAndNotify in order to reach this state.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isReadyForDisplay</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if an ad has been loaded into this incentivized interstitial and is ready to display. NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Check if an ad is currently ready on this object. You must call preloadAndNotify in order to reach this state.</p>
+
+<p>It is highly recommended that you implement an asynchronous flow (using an <a href="../Protocols/ALAdLoadDelegate.html">ALAdLoadDelegate</a> with preloadAndNotify) rather than checking this property. This class does not contain a queue and can hold only one preloaded ad at a time. Therefore, you should NOT simply call <a href="#//api/name/preloadAndNotify:">preloadAndNotify:</a> any time this method returns NO; it is important to invoke only one ad load - then not invoke any further loads until the ad has been closed (e.g., ALAdDisplayDelegate&rsquo;s adWasHidden callback).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALIncentivizedInterstitialAd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadAndNotify:" title="preloadAndNotify:"></a>
+	<h3 class="subsubtitle method-title">preloadAndNotify:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pre-load an incentivized interstitial, and notify your provided Ad Load Delegate.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)preloadAndNotify:(id&lt;ALAdLoadDelegate&gt;)<em>adLoadDelegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adLoadDelegate</em></dt>
+			<dd><p>The delegate to notify that preloading was completed. May be nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Pre-load an incentivized interstitial, and notify your provided Ad Load Delegate.</p>
+
+<p>Invoke once to preload, then do not invoke again until the ad has has been closed (e.g., ALAdDisplayDelegate&rsquo;s adWasHidden callback).
+You may pass a nil argument to preloadAndNotify if you intend to use the synchronous ( isIncentivizedAdReady ) flow. Note that this is NOT recommended; we HIGHLY RECOMMEND you use an ad load delegate.
+This method uses the <a href="#//api/name/shared">shared</a> instance, and will only work if you have set your SDK key in Info.plist.
+Note that we internally try to pull down the next ad&rsquo;s resources before you need it. Therefore, this method may complete immediately in many circumstances.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALIncentivizedInterstitialAd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setUserIdentifier:" title="setUserIdentifier:"></a>
+	<h3 class="subsubtitle method-title">setUserIdentifier:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set a string which identifies the current user, which will be passed through to your server via our optional S2S postbacks.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setUserIdentifier:(NSString *)<em>userIdentifier</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userIdentifier</em></dt>
+			<dd><p>Some descriptive string identifying the user, usually a username.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set a string which identifies the current user, which will be passed through to your server via our optional S2S postbacks.</p>
+
+<p>If you&rsquo;re using reward validation, you can optionally set a user identifier to be included with
+currency validation postbacks. For example, a user name. We&rsquo;ll include this in the postback when we
+ping your currency endpoint from our server.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALIncentivizedInterstitialAd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shared" title="shared"></a>
+	<h3 class="subsubtitle method-title">shared</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get a reference to the shared instance of ALIncentivizedInterstitialAd.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (ALIncentivizedInterstitialAd *)shared</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get a reference to the shared instance of ALIncentivizedInterstitialAd.</p>
+
+<p>This wraps the <a href="../Classes/ALSdk.html#//api/name/shared">[ALSdk shared]</a> call, and will only work if you hve set your SDK key in Info.plist.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALIncentivizedInterstitialAd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showAndNotify:" title="showAndNotify:"></a>
+	<h3 class="subsubtitle method-title">showAndNotify:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Show an incentivized interstitial over the current key window, using the most recently pre-loaded ad.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)showAndNotify:(id&lt;ALAdRewardDelegate&gt;)<em>adRewardDelegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adRewardDelegate</em></dt>
+			<dd><p>The reward delegate to notify upon validating reward authenticity with AppLovin.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Show an incentivized interstitial over the current key window, using the most recently pre-loaded ad.</p>
+
+<p>You must call preloadAndNotify before calling showOver.</p>
+
+<p>Using the <a href="../Protocols/ALAdRewardDelegate.html">ALAdRewardDelegate</a>, you will be able to verify with AppLovin servers the the video view is legitimate,
+as we will confirm whether the specific ad was actually served - then we will ping your server with a url for you to update
+the user&rsquo;s balance. The Reward Validation Delegate will tell you whether we were able to reach our servers or not. If you receive
+a successful response, you should refresh the user&rsquo;s balance from your server. For more info, see the documentation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALIncentivizedInterstitialAd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showOver:andNotify:" title="showOver:andNotify:"></a>
+	<h3 class="subsubtitle method-title">showOver:andNotify:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Show an incentivized interstitial, using the most recently pre-loaded ad.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)showOver:(UIWindow *)<em>window</em> andNotify:(id&lt;ALAdRewardDelegate&gt;)<em>adRewardDelegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>window</em></dt>
+			<dd><p>The UIWindow over which the rewarded video should be displayed.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adRewardDelegate</em></dt>
+			<dd><p>The reward delegate to notify upon validating reward authenticity with AppLovin.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Show an incentivized interstitial, using the most recently pre-loaded ad.</p>
+
+<p>You must call preloadAndNotify before calling showOver.</p>
+
+<p>Using the <a href="../Protocols/ALAdRewardDelegate.html">ALAdRewardDelegate</a>, you will be able to verify with AppLovin servers the the video view is legitimate,
+as we will confirm whether the specific ad was actually served - then we will ping your server with a url for you to update
+the user&rsquo;s balance. The Reward Validation Delegate will tell you whether we were able to reach our servers or not. If you receive
+a successful response, you should refresh the user&rsquo;s balance from your server. For more info, see the documentation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALIncentivizedInterstitialAd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userIdentifier" title="userIdentifier"></a>
+	<h3 class="subsubtitle method-title">userIdentifier</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the currently set user identification string.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)userIdentifier</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The last value supplied via <a href="#//api/name/setUserIdentifier:">setUserIdentifier:</a></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the currently set user identification string.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALIncentivizedInterstitialAd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/dismiss" title="dismiss"></a>
+	<h3 class="subsubtitle method-title">dismiss</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Dismiss an incentivized interstitial prematurely, before video playback has completed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)dismiss</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Dismiss an incentivized interstitial prematurely, before video playback has completed.</p>
+
+<p>In most circumstances, this is not recommended, as it may confuse users by denying them a reward.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALIncentivizedInterstitialAd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithSdk:" title="initWithSdk:"></a>
+	<h3 class="subsubtitle method-title">initWithSdk:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initialize an incentivized interstitial with a specific custom SDK.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithSdk:(ALSdk *)<em>anSdk</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>anSdk</em></dt>
+			<dd><p>An SDK instance to use.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initialize an incentivized interstitial with a specific custom SDK.</p>
+
+<p>This is necessary if you use <code>[<a href="../Classes/ALSdk.html">ALSdk</a> sharedWithKey: &hellip;]</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALIncentivizedInterstitialAd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preloadAndNotify:" title="preloadAndNotify:"></a>
+	<h3 class="subsubtitle method-title">preloadAndNotify:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pre-load an incentivized interstitial, and notify your provided Ad Load Delegate.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)preloadAndNotify:(id&lt;ALAdLoadDelegate&gt;)<em>adLoadDelegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adLoadDelegate</em></dt>
+			<dd><p>The delegate to notify that preloading was completed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Pre-load an incentivized interstitial, and notify your provided Ad Load Delegate.</p>
+
+<p>Invoke once to preload, then do not invoke again until the ad has has been closed (e.g., ALAdDisplayDelegate&rsquo;s adWasHidden callback).
+You may pass a nil argument to preloadAndNotify if you intend to use the synchronous ( isIncentivizedAdReady ) flow. Note that this is NOT recommended; we HIGHLY RECOMMEND you use an ad load delegate.
+Note that we internally try to pull down the next ad&rsquo;s resources before you need it. Therefore, this method may complete immediately in many circumstances.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALIncentivizedInterstitialAd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showAndNotify:" title="showAndNotify:"></a>
+	<h3 class="subsubtitle method-title">showAndNotify:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Show an incentivized interstitial over the current key window, using the most recently pre-loaded ad.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)showAndNotify:(id&lt;ALAdRewardDelegate&gt;)<em>adRewardDelegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adRewardDelegate</em></dt>
+			<dd><p>The reward delegate to notify upon validating reward authenticity with AppLovin.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Show an incentivized interstitial over the current key window, using the most recently pre-loaded ad.</p>
+
+<p>You must call preloadAndNotify before calling showOver.</p>
+
+<p>Using the <a href="../Protocols/ALAdRewardDelegate.html">ALAdRewardDelegate</a>, you will be able to verify with AppLovin servers the the video view is legitimate,
+as we will confirm whether the specific ad was actually served - then we will ping your server with a url for you to update
+the user&rsquo;s balance. The Reward Validation Delegate will tell you whether we were able to reach our servers or not. If you receive
+a successful response, you should refresh the user&rsquo;s balance from your server. For more info, see the documentation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALIncentivizedInterstitialAd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showOver:andNotify:" title="showOver:andNotify:"></a>
+	<h3 class="subsubtitle method-title">showOver:andNotify:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Show an incentivized interstitial, using the most recently pre-loaded ad.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)showOver:(UIWindow *)<em>window</em> andNotify:(id&lt;ALAdRewardDelegate&gt;)<em>adRewardDelegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>window</em></dt>
+			<dd><p>The UIWindow over which the rewarded video should be displayed.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>adRewardDelegate</em></dt>
+			<dd><p>The reward delegate to notify upon validating reward authenticity with AppLovin.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Show an incentivized interstitial, using the most recently pre-loaded ad.</p>
+
+<p>You must call preloadAndNotify before calling showOver.</p>
+
+<p>Using the <a href="../Protocols/ALAdRewardDelegate.html">ALAdRewardDelegate</a>, you will be able to verify with AppLovin servers that the video view is legitimate,
+as we will confirm whether the specific ad was actually served - then we will ping your server with a url for you to update
+the user&rsquo;s balance. The Reward Validation Delegate will tell you whether we were able to reach our servers or not. If you receive
+a successful response, you should refresh the user&rsquo;s balance from your server. For more info, see the documentation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ALIncentivizedInterstitialAd.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 AppLovin. All rights reserved. (Last updated: 2014-06-30)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
