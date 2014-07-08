@@ -92,3 +92,6 @@
 [submodule "AFNetworking"]
 	path = AFNetworking
 	url = https://github.com/AFNetworking/AFNetworking.git
+[submodule "AdColony-iOS-SDK"]
+	path = AdColony-iOS-SDK
+	url = https://github.com/AdColony/AdColony-iOS-SDK.git
