@@ -9,7 +9,7 @@
 	url = https://github.com/touchbee/TBHintView.git
 [submodule "SVProgressHUD"]
 	path = SVProgressHUD
-	url = https://github.com/samvermette/SVProgressHUD.git
+	url = https://github.com/wisespa/SVProgressHUD.git
 [submodule "nimbus"]
 	path = nimbus
 	url = https://github.com/jverkoey/nimbus.git
