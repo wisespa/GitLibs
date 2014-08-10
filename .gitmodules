@@ -95,3 +95,6 @@
 [submodule "AdColony-iOS-SDK"]
 	path = AdColony-iOS-SDK
 	url = https://github.com/AdColony/AdColony-iOS-SDK.git
+[submodule "MDRadialProgress"]
+	path = MDRadialProgress
+	url = https://github.com/wisespa/MDRadialProgress.git
