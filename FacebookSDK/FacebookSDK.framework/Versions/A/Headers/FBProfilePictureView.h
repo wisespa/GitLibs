@@ -19,12 +19,9 @@
 /*!
  @typedef FBProfilePictureCropping enum
 
- @abstract
- Type used to specify the cropping treatment of the profile picture.
-
- @discussion
+ @abstract Specify the cropping treatment of the profile picture.
  */
-typedef enum {
+typedef NS_ENUM(NSUInteger, FBProfilePictureCropping) {
 
     /*! Square (default) - the square version that the Facebook user defined. */
     FBProfilePictureCroppingSquare      = 0,
@@ -32,7 +29,7 @@ typedef enum {
     /*! Original - the original profile picture, as uploaded. */
     FBProfilePictureCroppingOriginal    = 1
 
-} FBProfilePictureCropping;
+};
 
 /*!
  @class
@@ -51,7 +48,7 @@ typedef enum {
  @abstract
  The Facebook ID of the user, place or object for which a picture should be fetched and displayed.
  */
-@property (copy, nonatomic) NSString* profileID;
+@property (copy, nonatomic) NSString *profileID;
 
 /*!
  @abstract
@@ -63,7 +60,7 @@ typedef enum {
  @abstract
  Initializes and returns a profile view object.
  */
-- (id)init;
+- (instancetype)init;
 
 
 /*!
@@ -73,8 +70,7 @@ typedef enum {
  @param profileID       The Facebook ID of the user, place or object for which a picture should be fetched and displayed.
  @param pictureCropping The cropping to use for the profile picture.
  */
-- (id)initWithProfileID:(NSString*)profileID
-     pictureCropping:(FBProfilePictureCropping)pictureCropping;
-
+- (instancetype)initWithProfileID:(NSString *)profileID
+                  pictureCropping:(FBProfilePictureCropping)pictureCropping;
 
 @end

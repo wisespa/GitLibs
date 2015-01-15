@@ -16,12 +16,14 @@
 
 #import "FBSession.h"
 
-#if defined (DEBUG)
-    #define SAFE_TO_USE_FBTESTSESSION
+#import "FBSDKMacros.h"
+
+#if defined(DEBUG) && !defined(SAFE_TO_USE_FBTESTSESSION)
+#define SAFE_TO_USE_FBTESTSESSION
 #endif
 
 #if !defined(SAFE_TO_USE_FBTESTSESSION)
-    #pragma message ("warning: using FBTestSession, which is designed for unit-testing uses only, in non-DEBUG code -- ensure this is what you really want")
+#pragma message ("warning: using FBTestSession, which is designed for unit-testing uses only, in non-DEBUG code -- ensure this is what you really want")
 #endif
 
 /*!
@@ -29,21 +31,19 @@
  you need a second unique test user in a test case. Using the same tag each time reduces
  the proliferation of test users.
  */
-extern NSString *kSecondTestUserTag;
+FBSDK_EXTERN NSString *kSecondTestUserTag;
 /*!
  Consider using this tag to pass to sessionWithSharedUserWithPermissions:uniqueUserTag: when
  you need a third unique test user in a test case. Using the same tag each time reduces
  the proliferation of test users.
  */
-extern NSString *kThirdTestUserTag;
+FBSDK_EXTERN NSString *kThirdTestUserTag;
 
 /*!
  @class FBTestSession
 
- @abstract
- Implements an FBSession subclass that knows about test users for a particular
- application. This should never be used from a real application, but may be useful
- for writing unit tests, etc.
+ @abstract Deprecated in favor of `FBTestUserSession`
+ and `FBTestUsersManager`
 
  @discussion
  Facebook allows developers to create test accounts for testing their applications'
@@ -65,18 +65,25 @@ extern NSString *kThirdTestUserTag;
  seems to be in an invalid state, it can be deleted manually via the Web interface at
  https://developers.facebook.com/apps/APP_ID/permissions?role=test+users.
  */
+__attribute__ ((deprecated("use FBTestUsersManager and FBTestUserSession instead")))
 @interface FBTestSession : FBSession
 
 /// The app access token (composed of app ID and secret) to use for accessing test users.
 @property (readonly, copy) NSString *appAccessToken;
 /// The ID of the test user associated with this session.
 @property (readonly, copy) NSString *testUserID;
+/// The name of the test user associated with this session.
+@property (readonly, copy) NSString *testUserName;
 /// The App ID of the test app as configured in the plist.
 @property (readonly, copy) NSString *testAppID;
 /// The App Secret of the test app as configured in the plist.
 @property (readonly, copy) NSString *testAppSecret;
-// Defaults to NO. If set to YES, reauthorize calls will fail with a nil token
-// as if the user had cancelled it reauthorize.
+/*!
+ @abstract Flag to disable reuathorize calls.
+ @discussion
+ Defaults to NO. If set to YES, reauthorize calls will fail with a nil token
+ as if the user had cancelled it reauthorize.
+*/
 @property (assign) BOOL disableReauthorize;
 
 /*!
@@ -94,8 +101,8 @@ extern NSString *kThirdTestUserTag;
 
  @param permissions     array of strings naming permissions to authorize; nil indicates
  a common default set of permissions should be used for unit testing
-  */
-+ (id)sessionWithSharedUserWithPermissions:(NSArray*)permissions;
+ */
++ (instancetype)sessionWithSharedUserWithPermissions:(NSArray *)permissions;
 
 /*!
  @abstract
@@ -118,8 +125,8 @@ extern NSString *kThirdTestUserTag;
  this case, consider using kSecondTestUserTag and kThirdTestUserTag so these users can be shared
  with other, similar, tests.
  */
-+ (id)sessionWithSharedUserWithPermissions:(NSArray*)permissions
-                             uniqueUserTag:(NSString*)uniqueUserTag;
++ (instancetype)sessionWithSharedUserWithPermissions:(NSArray *)permissions
+                                       uniqueUserTag:(NSString *)uniqueUserTag;
 
 /*!
  @abstract
@@ -133,6 +140,6 @@ extern NSString *kThirdTestUserTag;
  @param permissions     array of strings naming permissions to authorize; nil indicates
  a common default set of permissions should be used for unit testing
  */
-+ (id)sessionWithPrivateUserWithPermissions:(NSArray*)permissions;
++ (instancetype)sessionWithPrivateUserWithPermissions:(NSArray *)permissions;
 
 @end
