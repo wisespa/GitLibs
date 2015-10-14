@@ -2,6 +2,8 @@
 Google Conversion Tracking SDK for iOS
 ======================================
 
+Version 3.2.0
+
 This is the Google Conversion Tracking SDK for iOS.
 
 Requirements:

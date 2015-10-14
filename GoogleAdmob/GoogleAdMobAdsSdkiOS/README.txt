@@ -2,9 +2,9 @@
 Google Mobile Ads SDK for iOS
 =============================
 
-Version 7.4.0
-
 This is the Google Mobile Ads SDK for iOS.
+
+Version 7.5.1
 
 Requirements:
 - Xcode 5.1 or later.
