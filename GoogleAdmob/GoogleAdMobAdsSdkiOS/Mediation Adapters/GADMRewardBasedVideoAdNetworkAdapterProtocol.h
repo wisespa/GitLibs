@@ -20,9 +20,9 @@
 /// Returns Nil if the network does not have extra settings for publishers to send.
 + (Class<GADAdNetworkExtras>)networkExtrasClass;
 
-/// Creates an instance of the adapter. The adapter must only maintain a weak reference to the
-/// provided connector.
-- (instancetype)initWithGADMAdNetworkConnector:
+/// Returns an initialized instance of the adapter. The adapter must only maintain a weak reference
+/// to the provided connector.
+- (instancetype)initWithRewardBasedVideoAdNetworkConnector:
         (id<GADMRewardBasedVideoAdNetworkConnector>)connector;
 
 /// Tells the adapter to set up reward based video ads with the provided user ID. The adapter should
@@ -43,5 +43,12 @@
 /// Tells the adapter to remove itself as a delegate or notification observer from the underlying ad
 /// network SDK.
 - (void)stopBeingDelegate;
+
+@optional
+
+/// Returns an initialized instance of the adapter. The adapter must only maintain a weak reference
+/// to the provided connector.
+- (instancetype)initWithGADMAdNetworkConnector:(id<GADMRewardBasedVideoAdNetworkConnector>)connector
+    GAD_DEPRECATED_MSG_ATTRIBUTE("Use initWithRewardBasedVideoAdNetworkConnector:.");
 
 @end
